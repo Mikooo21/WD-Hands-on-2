@@ -20,7 +20,7 @@
 
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
+![](https://visit-counter.vercel.app/counter.png?page=Mikooo21/WD-Hands-on-2)
 
 ---
 
@@ -60,10 +60,7 @@
 Description of the project in details.
 
 Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+-The project is about making hero styles and cards by using CSS and HTML. The purpose of this project is to further improve our skills on developing a website.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
@@ -116,4 +113,4 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| CSS Card | To find references on animation on cards | https://www.youtube.com/playlist?list=PL5e68lK9hEzeno7BZD9q3Ay-4OmT9LGu4 |
