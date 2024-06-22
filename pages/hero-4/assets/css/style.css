@@ -8,7 +8,7 @@ body {
     overflow-x: hidden;
     width: 50vw;
     height: 120vh;
-    background: url(../img/octo.jpg);
+    background: url(../img/crab.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,120 +16,149 @@ body {
     object-fit: cover;
 }
 
-.container{
-    width: 100vw;
+.screen{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 90vh;
+    align-items: flex-end;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    display: flex;
+    margin: 200px auto 100px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 20px;
+    flex-direction: row;
+    gap: 50vh;
 }
 
 .container .card{
     position: relative;
-    width: 320px;
-    padding: 40px;
-    box-shadow: 0 10px 30px rgba(0,0,0,.1);
+    width: 350px;
+    margin: 0 auto;
+    background: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,.5);
     overflow: hidden;
-    background-color: rgb(196, 85, 255);
-    margin-left: 10vw;
 }
 
-
-.container .card2:hover:before {
-    bottom: 0;
+.container .card .layer{
+    position: absolute;
+    top: calc(10% - 2px);
+    top: 100%;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    background: #43afe1;
+    background: linear-gradient(#f46703, #e91e2f);
+    z-index: 1;
+    transition: 0.5s;
 }
 
-.container .card div{
+.container .card .content{
     position: relative;
     z-index: 2;
 }
 
-.container .card div h2{
-    margin-bottom: 10px;
-    font-size: 30px;
-    transition: 0.5s;
-    color: #000000;
-}
-
-.container .card div p{
+.container .card .content p{
     font-size: 18px;
-    transition: 0.5s;
-    color: #000000;
+    line-height: 24px;
+    color: #fff;
 }
 
-.container .card div a{
-    margin-top: 20px;
-    font-size: 14px;
-    display: inline-block;
-    text-decoration: none;
-    transition: 0.5s;
-    background: #fff;
-    color: #777;
-    padding: 6px 10px;
-    font-weight: 600;
-    box-shadow: 0 2px 20px rgba(0,0,0,.05);
+.container .card .content .image{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 40px rgba(0,0,0,.2);
 }
+
+.container .card .content .details h2{
+    font-size: 18px;
+    color: #fff;
+}
+
+.container .card .content .details h2 span{
+    color:#03a9f4;
+    font-size: 14px;
+    transition: 0.5s;
+
+}
+
+
+
 
 
 
 .container .card2{
     position: relative;
-    width: 320px;
-    padding: 40px;
-    box-shadow: 0 10px 30px rgba(0,0,0,.1);
+    width: 350px;
+    margin: 0 auto;
+    background: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,.5);
     overflow: hidden;
-    margin-right: 10vw;
 }
 
-.container .card2::before{
-    content: '';
+.container .card2 .layer{
     position: absolute;
-    left: 0;
-    bottom: calc(-100% + 4px);
+    top: calc(10% - 2px);
+    top: 100%;
     width: 100%;
+    left: 0;
     height: 100%;
-    background: rgb(146, 0, 194);
+    background: #43afe1;
+    background: linear-gradient(#f46703, #e91e2f);
     z-index: 1;
-    transition: 0.5s ease-in-out;
+    transition: 0.5s;
 }
 
-.container .card2:hover:before {
-    bottom: 0;
+.container .card2:hover .layer{
+    top:0;
 }
 
-
-.container .card2 div{
+.container .card2 .content{
     position: relative;
     z-index: 2;
 }
 
-.container .card2 div h2{
-    margin-bottom: 10px;
-    font-size: 30px;
-    transition: 0.5s;
-    color: #777;
-}
-
-.container .card2 div p{
+.container .card2 .content p{
     font-size: 18px;
-    transition: 0.5s;
-    color: #777;
-}
-
-.container .card2 div a{
-    margin-top: 20px;
-    font-size: 14px;
-    display: inline-block;
-    text-decoration: none;
-    transition: 0.5s;
-    background: #fff;
-    color: #777;
-    padding: 6px 10px;
-    font-weight: 600;
-    box-shadow: 0 2px 20px rgba(0,0,0,.05);
-}
-
-.container .card2:hover div h2,
-.container .card2:hover div p{
+    line-height: 24px;
     color: #fff;
-} 
+}
+
+.container .card2 .content .image{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 40px rgba(0,0,0,.2);
+}
+
+.container .card2 .content .details h2{
+    font-size: 18px;
+    color: #fff;
+}
+
+.container .card2 .content .details h2 span{
+    color:#03a9f4;
+    font-size: 14px;
+    transition: 0.5s;
+
+}
+
+.container .card2:hover .content .details h2 span{
+    color: #03a9f4;
+}
+
+

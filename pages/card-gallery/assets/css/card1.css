@@ -1,21 +1,70 @@
-* {
-    box-sizing: border-box;
+*, *::before, *::after, h6, p {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-& .card1 {
-    width: 20dvw;
-    text-align:justify;
-    background-color: rgba(0, 0, 0, 0.308);
-    padding: .7rem 1rem;
+
+
+body {
+    height: 300vh;
+    width: 100vh;
+    overflow-x: hidden;
+}
+
+.top{
+    display: flex;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.up{
+    display: flex;
+    align-items: center;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card-hero1 {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
     border-radius: 5px;
-    position: relative;
+    background-color: rgb(162, 254, 254);
+    margin-left: 5vw;
 }
 
-@media only screen and (max-width: 1024px) {
-    & .card1 {
-        width: 40dvw;
+.card-hero2 {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    background-color: rgb(165, 190, 190);
+    margin-top: 8vh;
+    margin-right: 5vw;
+}
 
-    }
+.card-hero2:hover{
+    transform: translateY(-20px);
+    background-image: url(shark.jpg);
+}
+
+.whiteshark:hover{
+    background-image: url(sharky.gif);
+}
+.down{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
+.h2, h2{
+    text-align: center;
 }
